@@ -1,8 +1,8 @@
-# Using Docker compose (depreciated)
-docker compose --scale nginx=2
+# Using Docker compose
+docker-compose up --scale api=2 -d
 
 OR 
 
-# Using docker swarm / docker stack deploy
+# Using docker swarm / docker stack deploy (untested)
 docker swarm init
 docker stack deploy -c docker-compose.yml <stack-name>
